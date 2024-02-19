@@ -1,0 +1,145 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  height: 100vh;
+  background-color: antiquewhite;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.main-container {
+  max-width: 800px;
+  background-color: rgb(7, 7, 7);
+  color: #fff;
+  min-height: 500px;
+  padding: 10px;
+}
+
+/* --------first section styling------ */
+.box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.box h1 {
+  font-size: 35px;
+  font-weight: 600;
+}
+.box h2 {
+  font-size: 35px;
+  font-weight: 400;
+}
+.box h3 {
+  font-size: 25px;
+  font-weight: 500;
+}
+.box p {
+  font-size: 25px;
+  font-weight: 100;
+  margin-top: 10px;
+  width: 100%;
+  text-align: left;
+}
+.inputs {
+  display: flex;
+  justify-content: space-around;
+  gap: 15px;
+  margin-block: 10px;
+}
+.inputs input {
+  font-size: 15px;
+  padding: 10px;
+}
+
+
+/* ---------second section styling------ */
+.buttons{
+  display: flex;
+  justify-content:center;
+  
+  
+}
+.buttons button{
+  font-size:17px;
+  width: 100px;
+  padding: 5px;
+  font-weight: 800;
+  outline: none;
+  border: none;
+  scale: .9;
+  opacity: .8;
+  color: #fff;
+  cursor: pointer;
+}
+.debitBtn{
+  background-color: rgb(194, 39, 39);
+}
+.creditBtn{
+  background-color: rgb(17, 200, 50);
+}
+.buttons button:hover{
+  opacity: 1;
+  scale: 1;
+}
+
+
+/*------third section styling---- */
+
+ .transactionHistory{
+  display: flex;
+  gap: 7px;
+  flex-direction: column;
+  margin-top: 15px;
+  overflow-y: scroll;
+  height: 350px;
+  
+ }
+ .transactionHistory::-webkit-scrollbar{
+  width: 10px;
+    background-color: #e2d8d8;
+
+
+ }
+ .transactionHistory::-webkit-scrollbar-thumb{
+  background-color: rgba(93, 85, 74, 0.818);
+  border-radius: 5px;
+  
+ }
+ .thirdSection p{
+  font-size: 20px;
+  
+ }
+
+.green{
+  display: flex;
+  background-color: #48ed11;
+  color: #000;
+  justify-content: space-between;
+  padding: 10px;
+}
+.red{
+  display: flex;
+  background-color: #ed1111;
+  color: #000;
+  justify-content: space-between;
+  padding: 10px;
+  
+}
+.deleteBtn{
+  margin-left: 5px;
+  color: #dd1717;
+  font-weight: 500;
+  font-style: italic;
+  background-color: #000;
+padding: 5px;
+cursor: pointer;
+opacity: .8;
+}
+.deleteBtn:hover{
+opacity: 1;
+color: white;
+}
